@@ -4160,7 +4160,7 @@ FROM subquery2""",
                 "postgres": "RANDOM()",
                 "presto": "RAND()",
                 "spark": "RAND()",
-                "sqlite": "RANDOM()",
+                "sqlite": "ABS(RANDOM()) / 9223372036854775808.0",
                 "tsql": "RAND()",
             },
             read={
